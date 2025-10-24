@@ -102,6 +102,42 @@ public class AiImageService {
     return result;
   }
 
+  public String getRecyclingSuggestion(String contentType, byte[] bytes) {
+    // 1. Define the persona with a System Message
+    SystemMessage systemMessage = SystemMessage.builder()
+        .text("""
+          당신은 대한민국 분리수거 전문가입니다.
+          이미지를 보고 어떤 물건인지 식별한 후, 그 물건을 어떻게 분리수거해야 하는지 단계별로 설명해주세요.
+          답변은 두 부분으로 구성됩니다:
+          - 품목: [물건 이름]
+          - 분리수거 방법: [단계별 설명]
+        """)
+        .build();
+
+    // 2. Create the media object from the image bytes
+    Media media = Media.builder()
+        .mimeType(MimeType.valueOf(contentType))
+        .data(new ByteArrayResource(bytes))
+        .build();
+
+    // 3. Create the user message with the image
+    UserMessage userMessage = UserMessage.builder()
+        .text("이 이미지 속 물건의 분리수거 방법을 알려주세요.")
+        .media(media)
+        .build();
+
+    // 4. Create the prompt
+    Prompt prompt = Prompt.builder()
+        .messages(systemMessage, userMessage)
+        .build();
+
+    // 5. Call the AI model and get the response
+    return chatClient.prompt(prompt)
+        .call()
+        .content();
+  }
+
+
   // ##### 이미지를 새로 생성하는 메소드 #####
   public String generateImage(String description) {
     // 한글 질문을 영어 질문으로 번역

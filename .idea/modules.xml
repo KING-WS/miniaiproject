@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/miniai.main.iml" filepath="$PROJECT_DIR$/.idea/modules/miniai.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/miniaiproject.iml" filepath="$PROJECT_DIR$/miniaiproject.iml" />
     </modules>
   </component>

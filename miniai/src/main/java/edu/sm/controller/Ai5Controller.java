@@ -2,6 +2,7 @@ package edu.sm.controller;
 
 
 
+import edu.sm.app.springai.service3.AiImageService;
 import edu.sm.app.springai.service5.BoomBarrierService;
 import edu.sm.app.springai.service5.GoService;
 import edu.sm.app.springai.service5.HeatingSystemService;
@@ -25,6 +26,7 @@ public class Ai5Controller {
   final private RecommendMovieService recommendMovieService;
   final private BoomBarrierService boomBarrierService;
   final private GoService goService;
+  final private AiImageService aiImageService;
 
 
 
@@ -54,6 +56,14 @@ public class Ai5Controller {
     String answer = boomBarrierService.chat(
             attach.getContentType(), attach.getBytes());
     return answer;
+  }
+
+  @RequestMapping(value = "/recycling")
+  public String recycling(@RequestParam("image") MultipartFile attach) throws IOException {
+    if (attach == null || attach.isEmpty()) {
+      return "이미지를 전송해주세요.";
+    }
+    return aiImageService.getRecyclingSuggestion(attach.getContentType(), attach.getBytes());
   }
 
 }
