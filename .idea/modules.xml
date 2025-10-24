@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/miniai/miniai.iml" filepath="$PROJECT_DIR$/miniai/miniai.iml" />
       <module fileurl="file://$PROJECT_DIR$/miniaiproject.iml" filepath="$PROJECT_DIR$/miniaiproject.iml" />
     </modules>
   </component>
