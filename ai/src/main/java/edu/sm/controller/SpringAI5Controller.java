@@ -38,8 +38,14 @@ public class SpringAI5Controller {
         return "index"; // Return "index" view
     }
     @RequestMapping("/ai4")
-    public String ai1(Model model) {
+    public String ai4(Model model) {
         model.addAttribute("center", dir+"ai4");
+        model.addAttribute("left", dir+"left");
+        return "index";
+    }
+    @RequestMapping("/ai5")
+    public String ai5(Model model) {
+        model.addAttribute("center", dir+"ai5");
         model.addAttribute("left", dir+"left");
         return "index";
     }
