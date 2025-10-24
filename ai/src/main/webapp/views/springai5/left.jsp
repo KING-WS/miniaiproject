@@ -6,6 +6,9 @@
     <li class="nav-item">
       <a class="nav-link" href="<c:url value="/springai5/homeai"/>">스마트홈 AI</a>
     </li>
+    <li class="nav-item">
+      <a class="nav-link" href="<c:url value="/springai5/ai4"/>">분리수거 맨</a>
+    </li>
 
   </ul>
   <hr class="d-sm-none">

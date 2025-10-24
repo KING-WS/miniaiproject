@@ -2,6 +2,7 @@ package edu.sm.controller;
 
 
 
+import edu.sm.app.springai.service3.AiImageService;
 import edu.sm.app.springai.service5.BoomBarrierService;
 import edu.sm.app.springai.service5.GoService;
 import edu.sm.app.springai.service5.HeatingSystemService;
@@ -19,7 +20,7 @@ import java.io.IOException;
 @RestController @RequestMapping("/ai5")
 @Slf4j @RequiredArgsConstructor
 public class Ai5Controller {
-
+  final private AiImageService aiImageService;
   final private HeatingSystemService heatingSystemService;
   final private RecommendMovieService recommendMovieService;
   final private BoomBarrierService boomBarrierService;
@@ -61,6 +62,13 @@ public class Ai5Controller {
   public String smartHomeTools(@RequestParam("question") String question) {
     String answer = smartHomeService.chat(question);
     return answer;
+  }
+  @RequestMapping(value = "/recycling")
+  public String recycling(@RequestParam("image") MultipartFile attach) throws IOException {
+    if (attach == null || attach.isEmpty()) {
+      return "이미지를 전송해주세요.";
+    }
+    return aiImageService.getRecyclingSuggestion(attach.getContentType(), attach.getBytes());
   }
 
 }

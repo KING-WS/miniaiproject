@@ -37,6 +37,12 @@ public class SpringAI5Controller {
         model.addAttribute("left", dir + "left");   // Set left attribute
         return "index"; // Return "index" view
     }
+    @RequestMapping("/ai4")
+    public String ai1(Model model) {
+        model.addAttribute("center", dir+"ai4");
+        model.addAttribute("left", dir+"left");
+        return "index";
+    }
 
     @ResponseBody
     @PostMapping("/smarthome")
