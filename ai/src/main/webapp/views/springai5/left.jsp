@@ -6,7 +6,9 @@
     <li class="nav-item">
       <a class="nav-link" href="<c:url value="/springai5/homeai"/>">스마트홈 AI</a>
     </li>
-
+    <li class="nav-item">
+      <a class="nav-link" href="<c:url value="/springai5/scannerai"/>">가계부 AI</a>
+    </li>
   </ul>
   <hr class="d-sm-none">
 </div>

@@ -38,8 +38,9 @@ dependencies {
     providedRuntime 'org.springframework.boot:spring-boot-starter-tomcat'
 
     //SpringAI Lib
+    //spring과 관련된 라이브러리
+    implementation 'org.springframework.boot:spring-boot-starter-webflux' //하나의 스트림(파이프를꽃는거)으로 전송하는방식중 끊어내는 방식
     implementation 'org.springframework.ai:spring-ai-starter-model-openai'
-    implementation 'org.springframework.boot:spring-boot-starter-webflux'
     implementation 'org.springframework.ai:spring-ai-starter-vector-store-pgvector'
     implementation 'org.springframework.ai:spring-ai-pdf-document-reader'
     implementation 'org.springframework.ai:spring-ai-tika-document-reader'
@@ -47,22 +48,26 @@ dependencies {
     implementation 'org.springframework.ai:spring-ai-advisors-vector-store'
     implementation 'org.springframework.ai:spring-ai-rag'
 
-
-
     //tomcat
     implementation 'org.apache.tomcat.embed:tomcat-embed-jasper'
     implementation 'jakarta.servlet:jakarta.servlet-api'
     implementation 'jakarta.servlet.jsp.jstl:jakarta.servlet.jsp.jstl-api'
     implementation 'org.glassfish.web:jakarta.servlet.jsp.jstl'
+
     // Properties Encryption
     implementation 'com.github.ulisesbocchio:jasypt-spring-boot-starter:3.0.3'
 
     testImplementation 'org.projectlombok:lombok'
-    testAnnotationProcessor 'org.projectlombok:lombok'
+    testAnnotationProcessor 'org.projectlombok:lombok' //테스트 환경에서도 lombk을 사용할 수 있게 함
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
     testImplementation 'io.projectreactor:reactor-test'
 
+
+    // Mybatis & MySQL Driver
+    implementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter:3.0.3'
+    runtimeOnly 'com.mysql:mysql-connector-j'
+    runtimeOnly 'org.postgresql:postgresql'
 }
 
 dependencyManagement {

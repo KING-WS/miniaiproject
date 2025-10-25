@@ -38,6 +38,13 @@ public class SpringAI5Controller {
         return "index"; // Return "index" view
     }
 
+    @RequestMapping("/scannerai")
+    public String scannerai(Model model) {
+        model.addAttribute("center", dir+"scannerai");
+        model.addAttribute("left", dir+"left");
+        return "index";
+    }
+
     @ResponseBody
     @PostMapping("/smarthome")
     public String smartHomeChat(@RequestParam String question) {
