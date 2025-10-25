@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" external-system-id="GRADLE" name="Gradle : edu.sm : ai-0.0.1-SNAPSHOT.war">
+    <output-path>$PROJECT_DIR$/ai/build/libs</output-path>
+    <properties id="gradle-properties">
+      <options external-project-path="$PROJECT_DIR$/ai">
+        <buildTaskPath>:war</buildTaskPath>
+        <cleanTaskPath>:cleanWar</cleanTaskPath>
+      </options>
+    </properties>
+    <root id="archive" name="ai-0.0.1-SNAPSHOT.war">
+      <element id="artifact" artifact-name="Gradle : edu.sm : ai-0.0.1-SNAPSHOT.war (exploded)" />
+    </root>
+  </artifact>
+</component>

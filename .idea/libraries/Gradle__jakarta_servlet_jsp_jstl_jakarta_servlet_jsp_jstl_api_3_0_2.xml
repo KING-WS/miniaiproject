@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: jakarta.servlet.jsp.jstl:jakarta.servlet.jsp.jstl-api:3.0.2" type="java-imported" external-system-id="GRADLE">
+    <properties groupId="jakarta.servlet.jsp.jstl" artifactId="jakarta.servlet.jsp.jstl-api" version="3.0.2" baseVersion="3.0.2" />
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/jakarta.servlet.jsp.jstl/jakarta.servlet.jsp.jstl-api/3.0.2/3993114cd341afa42b2c2841c88ef653fa7ef3ee/jakarta.servlet.jsp.jstl-api-3.0.2.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/jakarta.servlet.jsp.jstl/jakarta.servlet.jsp.jstl-api/3.0.2/3f823490e0d589d6fd715a7f6f379525a79c3b74/jakarta.servlet.jsp.jstl-api-3.0.2-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/jakarta.servlet.jsp.jstl/jakarta.servlet.jsp.jstl-api/3.0.2/c759a8ac955ae129885f56230714530c57a09d35/jakarta.servlet.jsp.jstl-api-3.0.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

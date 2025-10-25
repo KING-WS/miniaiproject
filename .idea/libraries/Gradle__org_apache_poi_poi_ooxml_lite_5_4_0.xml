@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: org.apache.poi:poi-ooxml-lite:5.4.0" type="java-imported" external-system-id="GRADLE">
+    <properties groupId="org.apache.poi" artifactId="poi-ooxml-lite" version="5.4.0" baseVersion="5.4.0" />
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.poi/poi-ooxml-lite/5.4.0/cac183d329e45d65a3d72b4b04460d0f221857e5/poi-ooxml-lite-5.4.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.poi/poi-ooxml-lite/5.4.0/b27d660dcabc156558f9278c56e05d6528dcf30c/poi-ooxml-lite-5.4.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

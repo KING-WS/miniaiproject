@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: org.springframework.ai:spring-ai-autoconfigure-vector-store-observation:1.0.2" type="java-imported" external-system-id="GRADLE">
+    <properties groupId="org.springframework.ai" artifactId="spring-ai-autoconfigure-vector-store-observation" version="1.0.2" baseVersion="1.0.2" />
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.ai/spring-ai-autoconfigure-vector-store-observation/1.0.2/b595a930dafcc40c2be3f0a467c31438e514361a/spring-ai-autoconfigure-vector-store-observation-1.0.2.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.ai/spring-ai-autoconfigure-vector-store-observation/1.0.2/27f65abab5a140e8d5011520f59bed19280fb65/spring-ai-autoconfigure-vector-store-observation-1.0.2-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.ai/spring-ai-autoconfigure-vector-store-observation/1.0.2/a94688a291b487d8a3375aba9eccf040bd955493/spring-ai-autoconfigure-vector-store-observation-1.0.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

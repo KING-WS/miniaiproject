@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: org.apache.tika:tika-parser-webarchive-module:3.1.0" type="java-imported" external-system-id="GRADLE">
+    <properties groupId="org.apache.tika" artifactId="tika-parser-webarchive-module" version="3.1.0" baseVersion="3.1.0" />
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tika/tika-parser-webarchive-module/3.1.0/613c0f7b465d37a485befe6c0f99bc4c5dec83dd/tika-parser-webarchive-module-3.1.0.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tika/tika-parser-webarchive-module/3.1.0/bce3b4d0348b7ef5d80173d7704a4076f322f351/tika-parser-webarchive-module-3.1.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tika/tika-parser-webarchive-module/3.1.0/f425ca0dae9a99dda24ca045707b834c6ab970af/tika-parser-webarchive-module-3.1.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

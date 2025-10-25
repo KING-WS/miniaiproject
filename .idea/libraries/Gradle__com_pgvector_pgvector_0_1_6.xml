@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: com.pgvector:pgvector:0.1.6" type="java-imported" external-system-id="GRADLE">
+    <properties groupId="com.pgvector" artifactId="pgvector" version="0.1.6" baseVersion="0.1.6" />
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.pgvector/pgvector/0.1.6/267cf809102e9c56bd35e9a2de5cf8102b613c49/pgvector-0.1.6.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.pgvector/pgvector/0.1.6/b80e255be62ae6047d6767b511d5ce4b464d14cb/pgvector-0.1.6-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.pgvector/pgvector/0.1.6/e1cc19a6c517d7fbfd0250f3a728aec73f8f7485/pgvector-0.1.6-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

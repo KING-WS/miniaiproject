@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: org.springframework.ai:spring-ai-pdf-document-reader:1.0.2" type="java-imported" external-system-id="GRADLE">
+    <properties groupId="org.springframework.ai" artifactId="spring-ai-pdf-document-reader" version="1.0.2" baseVersion="1.0.2" />
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.ai/spring-ai-pdf-document-reader/1.0.2/8cf921609281bccf11602625def69c0375095aba/spring-ai-pdf-document-reader-1.0.2.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.ai/spring-ai-pdf-document-reader/1.0.2/f6c74fdbe76536e1a699fe825a92f7545579509/spring-ai-pdf-document-reader-1.0.2-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.ai/spring-ai-pdf-document-reader/1.0.2/451b9d1a2a2decc3e4455c46d211fa6f31f7720a/spring-ai-pdf-document-reader-1.0.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

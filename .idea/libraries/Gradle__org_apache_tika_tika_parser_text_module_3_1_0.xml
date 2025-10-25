@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: org.apache.tika:tika-parser-text-module:3.1.0" type="java-imported" external-system-id="GRADLE">
+    <properties groupId="org.apache.tika" artifactId="tika-parser-text-module" version="3.1.0" baseVersion="3.1.0" />
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tika/tika-parser-text-module/3.1.0/b91f31db21dfc7a719028510eca75a01d33c8627/tika-parser-text-module-3.1.0.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tika/tika-parser-text-module/3.1.0/dfef89ec0838226ff77a6951a7a9b893dc1c0b9e/tika-parser-text-module-3.1.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tika/tika-parser-text-module/3.1.0/afcefb59231b212b450d86cef722b5868f259db7/tika-parser-text-module-3.1.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

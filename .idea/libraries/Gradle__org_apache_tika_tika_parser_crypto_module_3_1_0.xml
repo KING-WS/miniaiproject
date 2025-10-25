@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: org.apache.tika:tika-parser-crypto-module:3.1.0" type="java-imported" external-system-id="GRADLE">
+    <properties groupId="org.apache.tika" artifactId="tika-parser-crypto-module" version="3.1.0" baseVersion="3.1.0" />
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tika/tika-parser-crypto-module/3.1.0/92477f3b0ec188c2b6b6433786d0ea55c3631ac1/tika-parser-crypto-module-3.1.0.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tika/tika-parser-crypto-module/3.1.0/769e95828e0226843b99f914013c8f241b59cbd3/tika-parser-crypto-module-3.1.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tika/tika-parser-crypto-module/3.1.0/efd7f31411948521db00bd8385c85c561af1cae5/tika-parser-crypto-module-3.1.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

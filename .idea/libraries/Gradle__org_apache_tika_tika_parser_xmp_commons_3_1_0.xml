@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: org.apache.tika:tika-parser-xmp-commons:3.1.0" type="java-imported" external-system-id="GRADLE">
+    <properties groupId="org.apache.tika" artifactId="tika-parser-xmp-commons" version="3.1.0" baseVersion="3.1.0" />
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tika/tika-parser-xmp-commons/3.1.0/eab700b6d96042e9a599e4036dfbe073e735a645/tika-parser-xmp-commons-3.1.0.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tika/tika-parser-xmp-commons/3.1.0/17b96b8d027f9545e289829365ae1abd5db92e67/tika-parser-xmp-commons-3.1.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tika/tika-parser-xmp-commons/3.1.0/40709cf828bccada2534834f281d260bc718cd5/tika-parser-xmp-commons-3.1.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

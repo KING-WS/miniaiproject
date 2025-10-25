@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: org.apache.tika:tika-parser-miscoffice-module:3.1.0" type="java-imported" external-system-id="GRADLE">
+    <properties groupId="org.apache.tika" artifactId="tika-parser-miscoffice-module" version="3.1.0" baseVersion="3.1.0" />
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tika/tika-parser-miscoffice-module/3.1.0/130ac385cabea2e2ab58bb6122fabfe9ae61f6d5/tika-parser-miscoffice-module-3.1.0.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tika/tika-parser-miscoffice-module/3.1.0/878902cb1242146454a409022ebd4ee2da44d8d6/tika-parser-miscoffice-module-3.1.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tika/tika-parser-miscoffice-module/3.1.0/5d1d9e861d29e1963b1cf841fe567012eb0cfd88/tika-parser-miscoffice-module-3.1.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

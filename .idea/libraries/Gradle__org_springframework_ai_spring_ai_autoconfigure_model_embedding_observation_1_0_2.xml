@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: org.springframework.ai:spring-ai-autoconfigure-model-embedding-observation:1.0.2" type="java-imported" external-system-id="GRADLE">
+    <properties groupId="org.springframework.ai" artifactId="spring-ai-autoconfigure-model-embedding-observation" version="1.0.2" baseVersion="1.0.2" />
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.ai/spring-ai-autoconfigure-model-embedding-observation/1.0.2/f41a15456a9621f6ef4663e3d3d25c576c7b1ddc/spring-ai-autoconfigure-model-embedding-observation-1.0.2.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.ai/spring-ai-autoconfigure-model-embedding-observation/1.0.2/6f7f28e3dc918f87e5b05cba36886c4dfdeaea3e/spring-ai-autoconfigure-model-embedding-observation-1.0.2-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.ai/spring-ai-autoconfigure-model-embedding-observation/1.0.2/5ac9cb3305153046f0948a94f32e1d9462d8f3d/spring-ai-autoconfigure-model-embedding-observation-1.0.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

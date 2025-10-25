@@ -12,7 +12,7 @@
         <module name="ai.test" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
+    <bytecodeTargetLevel target="17">
       <module name="miniai" target="17" />
       <module name="miniai.main" target="17" />
       <module name="miniai.test" target="17" />

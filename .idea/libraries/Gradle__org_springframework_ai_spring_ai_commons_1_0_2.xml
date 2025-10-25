@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: org.springframework.ai:spring-ai-commons:1.0.2" type="java-imported" external-system-id="GRADLE">
+    <properties groupId="org.springframework.ai" artifactId="spring-ai-commons" version="1.0.2" baseVersion="1.0.2" />
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.ai/spring-ai-commons/1.0.2/3816e971072793389e1409373a382d9e3a611fc5/spring-ai-commons-1.0.2.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.ai/spring-ai-commons/1.0.2/39df1f304f637f1d68506ed41da23adbebcb8c8d/spring-ai-commons-1.0.2-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.ai/spring-ai-commons/1.0.2/bef7e6d96f788d49f36fccce0a8284be9c575a46/spring-ai-commons-1.0.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
