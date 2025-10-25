@@ -16,7 +16,7 @@
     <content url="file://$MODULE_DIR$/../../ai/src/test">
       <sourceFolder url="file://$MODULE_DIR$/../../ai/src/test/java" isTestSource="true" />
     </content>
-    <orderEntry type="jdk" jdkName="17" jdkType="JavaSDK" />
+    <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="ai.main" />
     <orderEntry type="library" name="Gradle: org.springframework.boot:spring-boot-starter-web:3.4.11-SNAPSHOT" level="project" />

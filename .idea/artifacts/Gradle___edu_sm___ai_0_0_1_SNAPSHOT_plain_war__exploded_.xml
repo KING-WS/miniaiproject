@@ -20,8 +20,8 @@
         </element>
         <element id="directory" name="lib">
           <element id="library" level="project" name="Gradle: org.springframework.boot:spring-boot-starter-web:3.4.11-SNAPSHOT" />
-          <element id="library" level="project" name="Gradle: org.springframework.ai:spring-ai-starter-model-openai:1.0.2" />
           <element id="library" level="project" name="Gradle: org.springframework.boot:spring-boot-starter-webflux:3.4.11-SNAPSHOT" />
+          <element id="library" level="project" name="Gradle: org.springframework.ai:spring-ai-starter-model-openai:1.0.2" />
           <element id="library" level="project" name="Gradle: org.springframework.ai:spring-ai-starter-vector-store-pgvector:1.0.2" />
           <element id="library" level="project" name="Gradle: org.springframework.ai:spring-ai-pdf-document-reader:1.0.2" />
           <element id="library" level="project" name="Gradle: org.springframework.ai:spring-ai-tika-document-reader:1.0.2" />
@@ -33,16 +33,17 @@
           <element id="library" level="project" name="Gradle: jakarta.servlet:jakarta.servlet-api:6.0.0" />
           <element id="library" level="project" name="Gradle: org.glassfish.web:jakarta.servlet.jsp.jstl:3.0.1" />
           <element id="library" level="project" name="Gradle: com.github.ulisesbocchio:jasypt-spring-boot-starter:3.0.3" />
+          <element id="library" level="project" name="Gradle: org.mybatis.spring.boot:mybatis-spring-boot-starter:3.0.3" />
           <element id="library" level="project" name="Gradle: org.springframework.boot:spring-boot-starter-json:3.4.11-SNAPSHOT" />
           <element id="library" level="project" name="Gradle: org.springframework.boot:spring-boot-starter:3.4.11-SNAPSHOT" />
           <element id="library" level="project" name="Gradle: org.springframework:spring-webmvc:6.2.12" />
           <element id="library" level="project" name="Gradle: org.springframework:spring-web:6.2.12" />
+          <element id="library" level="project" name="Gradle: org.springframework:spring-webflux:6.2.12" />
+          <element id="library" level="project" name="Gradle: org.springframework.boot:spring-boot-starter-reactor-netty:3.4.11-SNAPSHOT" />
           <element id="library" level="project" name="Gradle: org.springframework.ai:spring-ai-autoconfigure-model-chat-client:1.0.2" />
           <element id="library" level="project" name="Gradle: org.springframework.ai:spring-ai-autoconfigure-model-chat-memory:1.0.2" />
           <element id="library" level="project" name="Gradle: org.springframework.ai:spring-ai-autoconfigure-model-openai:1.0.2" />
           <element id="library" level="project" name="Gradle: org.springframework.ai:spring-ai-openai:1.0.2" />
-          <element id="library" level="project" name="Gradle: org.springframework:spring-webflux:6.2.12" />
-          <element id="library" level="project" name="Gradle: org.springframework.boot:spring-boot-starter-reactor-netty:3.4.11-SNAPSHOT" />
           <element id="library" level="project" name="Gradle: org.springframework.ai:spring-ai-autoconfigure-vector-store-pgvector:1.0.2" />
           <element id="library" level="project" name="Gradle: org.springframework.ai:spring-ai-autoconfigure-vector-store-observation:1.0.2" />
           <element id="library" level="project" name="Gradle: org.springframework.ai:spring-ai-pgvector-store:1.0.2" />
@@ -56,6 +57,10 @@
           <element id="library" level="project" name="Gradle: org.eclipse.jdt:ecj:3.33.0" />
           <element id="library" level="project" name="Gradle: jakarta.el:jakarta.el-api:5.0.0" />
           <element id="library" level="project" name="Gradle: com.github.ulisesbocchio:jasypt-spring-boot:3.0.3" />
+          <element id="library" level="project" name="Gradle: org.springframework.boot:spring-boot-starter-jdbc:3.4.11-SNAPSHOT" />
+          <element id="library" level="project" name="Gradle: org.mybatis.spring.boot:mybatis-spring-boot-autoconfigure:3.0.3" />
+          <element id="library" level="project" name="Gradle: org.mybatis:mybatis:3.5.14" />
+          <element id="library" level="project" name="Gradle: org.mybatis:mybatis-spring:3.0.3" />
           <element id="library" level="project" name="Gradle: com.fasterxml.jackson.datatype:jackson-datatype-jdk8:2.18.4" />
           <element id="library" level="project" name="Gradle: com.fasterxml.jackson.module:jackson-module-parameter-names:2.18.4" />
           <element id="library" level="project" name="Gradle: com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.18.4" />
@@ -70,6 +75,8 @@
           <element id="library" level="project" name="Gradle: org.springframework:spring-beans:6.2.12" />
           <element id="library" level="project" name="Gradle: org.springframework:spring-expression:6.2.12" />
           <element id="library" level="project" name="Gradle: io.micrometer:micrometer-observation:1.14.12" />
+          <element id="library" level="project" name="Gradle: io.projectreactor:reactor-core:3.7.12" />
+          <element id="library" level="project" name="Gradle: io.projectreactor.netty:reactor-netty-http:1.2.11" />
           <element id="library" level="project" name="Gradle: org.springframework.ai:spring-ai-model:1.0.2" />
           <element id="library" level="project" name="Gradle: org.springframework.ai:spring-ai-autoconfigure-model-tool:1.0.2" />
           <element id="library" level="project" name="Gradle: org.springframework.ai:spring-ai-autoconfigure-retry:1.0.2" />
@@ -81,8 +88,6 @@
           <element id="library" level="project" name="Gradle: com.github.victools:jsonschema-generator:4.37.0" />
           <element id="library" level="project" name="Gradle: com.github.victools:jsonschema-module-jackson:4.37.0" />
           <element id="library" level="project" name="Gradle: org.slf4j:slf4j-api:2.0.17" />
-          <element id="library" level="project" name="Gradle: io.projectreactor:reactor-core:3.7.12" />
-          <element id="library" level="project" name="Gradle: io.projectreactor.netty:reactor-netty-http:1.2.11" />
           <element id="library" level="project" name="Gradle: org.springframework:spring-jdbc:6.2.12" />
           <element id="library" level="project" name="Gradle: com.zaxxer:HikariCP:5.1.0" />
           <element id="library" level="project" name="Gradle: com.pgvector:pgvector:0.1.6" />
@@ -129,11 +134,6 @@
           <element id="library" level="project" name="Gradle: org.slf4j:jul-to-slf4j:2.0.17" />
           <element id="library" level="project" name="Gradle: org.springframework:spring-jcl:6.2.12" />
           <element id="library" level="project" name="Gradle: io.micrometer:micrometer-commons:1.14.12" />
-          <element id="library" level="project" name="Gradle: org.springframework.ai:spring-ai-template-st:1.0.2" />
-          <element id="library" level="project" name="Gradle: org.springframework:spring-messaging:6.2.12" />
-          <element id="library" level="project" name="Gradle: org.antlr:antlr4-runtime:4.13.1" />
-          <element id="library" level="project" name="Gradle: org.springframework.retry:spring-retry:2.0.12" />
-          <element id="library" level="project" name="Gradle: com.fasterxml:classmate:1.7.1" />
           <element id="library" level="project" name="Gradle: org.reactivestreams:reactive-streams:1.0.4" />
           <element id="library" level="project" name="Gradle: io.projectreactor.netty:reactor-netty-core:1.2.11" />
           <element id="library" level="project" name="Gradle: io.netty:netty-codec-http2:4.1.128.Final" />
@@ -141,6 +141,11 @@
           <element id="library" level="project" name="Gradle: io.netty:netty-resolver-dns-native-macos:osx-x86_64:4.1.128.Final" />
           <element id="library" level="project" name="Gradle: io.netty:netty-resolver-dns:4.1.128.Final" />
           <element id="library" level="project" name="Gradle: io.netty:netty-transport-native-epoll:linux-x86_64:4.1.128.Final" />
+          <element id="library" level="project" name="Gradle: org.springframework.ai:spring-ai-template-st:1.0.2" />
+          <element id="library" level="project" name="Gradle: org.springframework:spring-messaging:6.2.12" />
+          <element id="library" level="project" name="Gradle: org.antlr:antlr4-runtime:4.13.1" />
+          <element id="library" level="project" name="Gradle: org.springframework.retry:spring-retry:2.0.12" />
+          <element id="library" level="project" name="Gradle: com.fasterxml:classmate:1.7.1" />
           <element id="library" level="project" name="Gradle: org.springframework:spring-tx:6.2.12" />
           <element id="library" level="project" name="Gradle: javax.validation:validation-api:1.1.0.Final" />
           <element id="library" level="project" name="Gradle: org.apache.pdfbox:pdfbox-tools:3.0.4" />
@@ -179,7 +184,6 @@
           <element id="library" level="project" name="Gradle: org.apache.pdfbox:xmpbox:3.0.4" />
           <element id="library" level="project" name="Gradle: ch.qos.logback:logback-core:1.5.20" />
           <element id="library" level="project" name="Gradle: org.apache.logging.log4j:log4j-api:2.24.3" />
-          <element id="library" level="project" name="Gradle: org.antlr:ST4:4.3.4" />
           <element id="library" level="project" name="Gradle: io.netty:netty-handler-proxy:4.1.128.Final" />
           <element id="library" level="project" name="Gradle: io.netty:netty-handler:4.1.128.Final" />
           <element id="library" level="project" name="Gradle: io.netty:netty-codec:4.1.128.Final" />
@@ -191,6 +195,7 @@
           <element id="library" level="project" name="Gradle: io.netty:netty-resolver:4.1.128.Final" />
           <element id="library" level="project" name="Gradle: io.netty:netty-transport-classes-epoll:4.1.128.Final" />
           <element id="library" level="project" name="Gradle: io.netty:netty-transport-native-unix-common:4.1.128.Final" />
+          <element id="library" level="project" name="Gradle: org.antlr:ST4:4.3.4" />
           <element id="library" level="project" name="Gradle: info.picocli:picocli:4.7.6" />
           <element id="library" level="project" name="Gradle: org.bouncycastle:bcpkix-jdk18on:1.80" />
           <element id="library" level="project" name="Gradle: org.glassfish.jaxb:jaxb-core:4.0.6" />
@@ -204,24 +209,19 @@
           <element id="library" level="project" name="Gradle: com.rometools:rome-utils:2.1.0" />
           <element id="library" level="project" name="Gradle: org.jdom:jdom2:2.0.6.1" />
           <element id="library" level="project" name="Gradle: com.adobe.xmp:xmpcore:6.1.11" />
-          <element id="library" level="project" name="Gradle: org.antlr:antlr-runtime:3.5.3" />
           <element id="library" level="project" name="Gradle: io.netty:netty-codec-socks:4.1.128.Final" />
+          <element id="library" level="project" name="Gradle: org.antlr:antlr-runtime:3.5.3" />
           <element id="library" level="project" name="Gradle: org.bouncycastle:bcutil-jdk18on:1.80" />
           <element id="library" level="project" name="Gradle: jakarta.xml.bind:jakarta.xml.bind-api:4.0.4" />
           <element id="library" level="project" name="Gradle: jakarta.activation:jakarta.activation-api:2.1.4" />
           <element id="library" level="project" name="Gradle: org.glassfish.jaxb:txw2:4.0.6" />
           <element id="library" level="project" name="Gradle: com.sun.istack:istack-commons-runtime:4.1.2" />
           <element id="library" level="project" name="Gradle: org.springframework.boot:spring-boot-devtools:3.4.11-SNAPSHOT" />
+          <element id="library" level="project" name="Gradle: com.mysql:mysql-connector-j:9.4.0" />
           <element id="library" level="project" name="Gradle: org.checkerframework:checker-qual:3.49.5" />
           <element id="library" level="project" name="Gradle: org.hdrhistogram:HdrHistogram:2.2.2" />
           <element id="library" level="project" name="Gradle: org.latencyutils:LatencyUtils:2.0.3" />
           <element id="library" level="project" name="Gradle: org.eclipse.angus:angus-activation:2.0.3" />
-          <element id="library" level="project" name="Gradle: org.mybatis.spring.boot:mybatis-spring-boot-starter:3.0.3" />
-          <element id="library" level="project" name="Gradle: org.springframework.boot:spring-boot-starter-jdbc:3.4.11-SNAPSHOT" />
-          <element id="library" level="project" name="Gradle: org.mybatis.spring.boot:mybatis-spring-boot-autoconfigure:3.0.3" />
-          <element id="library" level="project" name="Gradle: org.mybatis:mybatis:3.5.14" />
-          <element id="library" level="project" name="Gradle: org.mybatis:mybatis-spring:3.0.3" />
-          <element id="library" level="project" name="Gradle: com.mysql:mysql-connector-j:9.4.0" />
         </element>
       </element>
     </root>
