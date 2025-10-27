@@ -144,14 +144,6 @@ c:\miniaiproject\ai\
 
 ---
 
-## 📸 화면 구성
-
-### 메인 메뉴
-<img width="1900" height="895" alt="Spring AI 메뉴" src="https://github.com/user-attachments/assets/3a454bb2-d298-40e9-a883-85605454e41b" />
-
-### 🏠 스마트홈 AI
-<img width="1900" height="895" alt="스마트홈 AI 화면" src="https://github.com/user-attachments/assets/smarthome-ai-screenshot" />
-
 **주요 기능:**
 - 자연어/음성 명령으로 조명, 에어컨 제어
 - 실시간 기기 상태 모니터링
