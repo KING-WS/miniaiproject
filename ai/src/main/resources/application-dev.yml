@@ -49,7 +49,7 @@ logging:
 # @Value("${}")
 app:
   url:
-    adminserver: https://192.168.1.3:8444/
+    adminserver: https://192.168.1.7:8445/
   key:
     skey: ${MY_KEY}
 #    chatgpt: ENC(O6nA7LHMxSeW3hk1fFx5ccHaycrF6yODAV6PmroPHVmgH4NUeNSO+Rq0gDAhwFsdHQVLv7rESR6i+Ki+j5tad6S/8DUypnK4LEO5gYShjIm4qMX4rGCLIECH3o2Z7qOY2Dlr+yaRlV5qBUVo/QnoUyURg2YwL7itFCpMi3Ue8CcKIdBrBxd4tiDXrzuxDEK2B1sThLv50kNedije/uBmUSo+kbdEJYEDMkfDQ/KSoGo=)
