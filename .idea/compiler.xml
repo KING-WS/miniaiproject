@@ -11,12 +11,9 @@
         <module name="ai.test" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel target="17" />
   </component>
   <component name="JavacSettings">
-    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="ai" options="-parameters" />
-      <module name="ai.main" options="-parameters" />
-      <module name="ai.test" options="-parameters" />
-    </option>
+    <option name="ADDITIONAL_OPTIONS_STRING" value="-parameters" />
   </component>
 </project>
