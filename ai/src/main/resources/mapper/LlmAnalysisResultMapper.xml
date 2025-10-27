@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="edu.sm.app.repository.LlmAnalysisResultRepository">
+
+    <!-- INSERT: 새로운 LLM 분석 결과 등록 -->
+    <insert id="insert" parameterType="LlmAnalysisResult">
+        INSERT INTO llm_analysis_results (
+            input_data, llm_output, analysis_type, analysis_date,
+            amount, category, description, model_name, model_version, analysis_timestamp
+        )
+        VALUES (
+            #{inputData}, #{llmOutput}::jsonb, #{analysisType}, #{analysisDate},
+            #{amount}, #{category}, #{description}, #{modelName}, #{modelVersion}, #{analysisTimestamp}
+        )
+    </insert>
+
+    <!-- UPDATE: LLM 분석 결과 수정 -->
+    <update id="update" parameterType="LlmAnalysisResult">
+        UPDATE llm_analysis_results
+        SET
+            input_data = #{inputData},
+            llm_output = #{llmOutput}::jsonb,
+            analysis_type = #{analysisType},
+            analysis_date = #{analysisDate},
+            amount = #{amount},
+            category = #{category},
+            description = #{description},
+            model_name = #{modelName},
+            model_version = #{modelVersion},
+            analysis_timestamp = #{analysisTimestamp},
+            updated_at = NOW()
+        WHERE id = #{id}
+    </update>
+
+    <!-- DELETE: LLM 분석 결과 삭제 -->
+    <delete id="delete" parameterType="long">
+        DELETE FROM llm_analysis_results WHERE id = #{id}
+    </delete>
+
+    <!-- SELECT (Single): 특정 LLM 분석 결과 조회 -->
+    <select id="select" parameterType="long" resultType="LlmAnalysisResult">
+        SELECT * FROM llm_analysis_results WHERE id = #{id}
+    </select>
+
+    <!-- SELECT (All): 모든 LLM 분석 결과 조회 -->
+    <select id="selectAll" resultType="LlmAnalysisResult">
+        SELECT * FROM llm_analysis_results
+    </select>
+
+    <!-- SELECT: 특정 날짜 범위의 분석 결과 조회 (캘린더용) -->
+    <select id="selectByDateRange" resultType="LlmAnalysisResult">
+        SELECT * FROM llm_analysis_results 
+        WHERE analysis_date BETWEEN #{startDate} AND #{endDate}
+        ORDER BY analysis_date ASC, created_at ASC
+    </select>
+
+    <!-- SELECT: 특정 날짜의 분석 결과 조회 -->
+    <select id="selectByDate" resultType="LlmAnalysisResult">
+        SELECT * FROM llm_analysis_results 
+        WHERE analysis_date = #{date}
+        ORDER BY created_at ASC
+    </select>
+
+    <!-- SELECT: 분석 타입별 조회 -->
+    <select id="selectByAnalysisType" resultType="LlmAnalysisResult">
+        SELECT * FROM llm_analysis_results 
+        WHERE analysis_type = #{analysisType}
+        ORDER BY analysis_date DESC, created_at DESC
+    </select>
+
+    <!-- SELECT: 최근 분석 결과 조회 (최신순) -->
+    <select id="selectRecent" resultType="LlmAnalysisResult">
+        SELECT * FROM llm_analysis_results 
+        ORDER BY created_at DESC
+        LIMIT #{limit}
+    </select>
+
+</mapper>
