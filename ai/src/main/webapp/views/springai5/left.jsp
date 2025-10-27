@@ -9,6 +9,13 @@
     <li class="nav-item">
       <a class="nav-link" href="<c:url value="/springai5/scannerai"/>">가계부 AI</a>
     </li>
+    <li class="nav-item">
+      <a class="nav-link" href="<c:url value="/springai5/ai4"/>">분리수거 맨</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="<c:url value="/springai5/ai5"/>">주식분석 ai</a>
+    </li>
+
   </ul>
   <hr class="d-sm-none">
 </div>

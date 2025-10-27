@@ -37,33 +37,33 @@ public class AiImageService {
   public Flux<String> imageAnalysis(String question, String contentType, byte[] bytes) {
     // 시스템 메시지 생성
     SystemMessage systemMessage = SystemMessage.builder()
-        .text("""
+            .text("""
           당신은 이미지 분석 전문가입니다.   
           사용자 질문에 맞게 이미지를 분석하고 답변을 한국어로 하세요. 
         """)
-        .build();
+            .build();
 
     // 미디어 생성
     Media media = Media.builder()
-        .mimeType(MimeType.valueOf(contentType))
-        .data(new ByteArrayResource(bytes))
-        .build();
+            .mimeType(MimeType.valueOf(contentType))
+            .data(new ByteArrayResource(bytes))
+            .build();
 
     // 사용자 메시지 생성
     UserMessage userMessage = UserMessage.builder()
-        .text(question)
-        .media(media)
-        .build();
+            .text(question)
+            .media(media)
+            .build();
 
     // 프롬프트 생성
     Prompt prompt = Prompt.builder()
-        .messages(systemMessage, userMessage)
-        .build();
+            .messages(systemMessage, userMessage)
+            .build();
 
     // LLM에 요청하고, 응답받기
     Flux<String> flux = chatClient.prompt(prompt)
-        .stream()
-        .content();
+            .stream()
+            .content();
     return flux;
   }
 
@@ -101,6 +101,42 @@ public class AiImageService {
             .content();
     return result;
   }
+
+  public String getRecyclingSuggestion(String contentType, byte[] bytes) {
+    // 1. Define the persona with a System Message
+    SystemMessage systemMessage = SystemMessage.builder()
+            .text("""
+          당신은 대한민국 분리수거 전문가입니다.
+          이미지를 보고 어떤 물건인지 식별한 후, 그 물건을 어떻게 분리수거해야 하는지 단계별로 설명해주세요.
+          답변은 두 부분으로 구성됩니다:
+          - 품목: [물건 이름]
+          - 분리수거 방법: [단계별 설명]
+        """)
+            .build();
+
+    // 2. Create the media object from the image bytes
+    Media media = Media.builder()
+            .mimeType(MimeType.valueOf(contentType))
+            .data(new ByteArrayResource(bytes))
+            .build();
+
+    // 3. Create the user message with the image
+    UserMessage userMessage = UserMessage.builder()
+            .text("이 이미지 속 물건의 분리수거 방법을 알려주세요.")
+            .media(media)
+            .build();
+
+    // 4. Create the prompt
+    Prompt prompt = Prompt.builder()
+            .messages(systemMessage, userMessage)
+            .build();
+
+    // 5. Call the AI model and get the response
+    return chatClient.prompt(prompt)
+            .call()
+            .content();
+  }
+
 
   // ##### 이미지를 새로 생성하는 메소드 #####
   public String generateImage(String description) {

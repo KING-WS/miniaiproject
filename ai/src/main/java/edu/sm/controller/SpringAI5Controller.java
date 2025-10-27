@@ -37,6 +37,18 @@ public class SpringAI5Controller {
         model.addAttribute("left", dir + "left");   // Set left attribute
         return "index"; // Return "index" view
     }
+    @RequestMapping("/ai4")
+    public String ai4(Model model) {
+        model.addAttribute("center", dir+"ai4");
+        model.addAttribute("left", dir+"left");
+        return "index";
+    }
+    @RequestMapping("/ai5")
+    public String ai5(Model model) {
+        model.addAttribute("center", dir+"ai5");
+        model.addAttribute("left", dir+"left");
+        return "index";
+    }
 
     @RequestMapping("/scannerai")
     public String scannerai(Model model) {
