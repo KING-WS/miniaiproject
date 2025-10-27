@@ -65,7 +65,7 @@ public class AccountBookTools {
 
     @Tool(description = """
         이번 달에서 가장 비싼 지출 항목을 조회합니다.
-        날짜, 금액, 카테고리, 설명 정보를 반환합니다.
+        날짜, 금액, 소비분류, 설명 정보를 반환합니다.
         """)
     public String getMostExpensiveItem() {
         try {
@@ -80,7 +80,7 @@ public class AccountBookTools {
                 .orElse(null);
             
             if (maxExpense != null) {
-                String result = String.format("가장 비싼 지출은 %s에 %s원으로 %s입니다. 카테고리: %s", 
+                String result = String.format("가장 비싼 지출은 %s에 %s원으로 %s입니다. 소비분류: %s",
                     maxExpense.getAnalysisDate(), 
                     maxExpense.getAmount(), 
                     maxExpense.getDescription(),

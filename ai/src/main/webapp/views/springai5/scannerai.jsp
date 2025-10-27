@@ -3,7 +3,7 @@
 
 <style>
   #videoContainer { position: relative; width: 100%; margin-bottom: 10px; }
-  #video { width: 100%; height: auto; border: 2px solid #007bff; border-radius: 5px; }
+  #video { width: 100%; height: 400px; object-fit: cover; border: 2px solid #007bff; border-radius: 5px; }
   #captureBtn {
     display: block;
     width: 100%;
@@ -252,6 +252,143 @@
     font-size: 22px !important;
     font-weight: bold !important;
   }
+
+  /* 플로팅 버튼 스타일 */
+  .floating-ai-button {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    z-index: 1000;
+    transition: all 0.3s ease;
+  }
+
+  .floating-ai-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+  }
+
+  /* AI 어시스턴트 모달 */
+  .ai-modal {
+    display: none;
+    position: fixed;
+    bottom: 100px;
+    right: 30px;
+    width: 400px;
+    max-width: calc(100vw - 60px);
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+    z-index: 999;
+    animation: slideUp 0.3s ease;
+  }
+
+  @keyframes slideUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .ai-modal-header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 15px 20px;
+    border-radius: 15px 15px 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .ai-modal-header h5 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  .ai-modal-close {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+    line-height: 1;
+  }
+
+  .ai-modal-body {
+    padding: 20px;
+  }
+
+  .ai-modal textarea {
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 14px;
+    resize: none;
+    margin-bottom: 10px;
+  }
+
+  .ai-modal textarea:focus {
+    outline: none;
+    border-color: #667eea;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+  }
+
+  .ai-modal button.ask-button {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .ai-modal button.ask-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+  }
+
+  .ai-modal button.ask-button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+
+  .ai-response-box {
+    background-color: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    padding: 15px;
+    min-height: 120px;
+    max-height: 250px;
+    overflow-y: auto;
+    white-space: pre-wrap;
+    margin-top: 10px;
+    font-size: 13px;
+    line-height: 1.6;
+  }
 </style>
 
 <div class="col-sm-10">
@@ -288,16 +425,6 @@
           <p style="color: #999; text-align: center; padding: 20px;">영수증을 캡쳐하면 LLM 분석 결과가 여기에 표시됩니다</p>
         </div>
       </div>
-
-      <!-- AI 어시스턴트 섹션 -->
-      <div class="ai-section">
-        <div class="section-title">가계부 AI 어시스턴트</div>
-        <div style="margin-bottom: 10px;">
-          <textarea id="accountQuestion" class="form-control" rows="2" placeholder="예: 이번 달 가장 비싼 지출은?&#10;예: 총 지출 비용은?"></textarea>
-        </div>
-        <button id="askBtn" class="btn btn-success btn-block" style="font-size: 13px; padding: 8px;">질문하기</button>
-        <div id="aiResponse" style="background-color: #f0f8ff; border: 1px solid #ccc; padding: 10px; min-height: 100px; max-height: 250px; overflow-y: auto; white-space: pre-wrap; margin-top: 10px; border-radius: 5px; font-size: 12px;">AI 어시스턴트가 대기 중입니다...</div>
-      </div>
     </div>
   </div>
 </div>
@@ -318,6 +445,26 @@
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="$('#eventDetailModal').hide();">닫기</button>
       </div>
+    </div>
+  </div>
+</div>
+
+<!-- 플로팅 AI 어시스턴트 버튼 -->
+<button class="floating-ai-button" id="floatingAiBtn" title="AI 어시스턴트">
+  🤖
+</button>
+
+<!-- AI 어시스턴트 모달 -->
+<div class="ai-modal" id="aiAssistantModal">
+  <div class="ai-modal-header">
+    <h5>가계부 AI 어시스턴트</h5>
+    <button class="ai-modal-close" id="closeAiModal">&times;</button>
+  </div>
+  <div class="ai-modal-body">
+    <textarea id="accountQuestion" rows="3" placeholder="예: 이번 달 가장 비싼 지출은?&#10;예: 총 지출 비용은?"></textarea>
+    <button id="askBtn" class="ask-button">질문하기</button>
+    <div class="ai-response-box" id="aiResponse">
+      AI 어시스턴트가 대기 중입니다...
     </div>
   </div>
 </div>
@@ -559,14 +706,37 @@
       this.initEvents();
     },
     initEvents: function() {
+      // 플로팅 버튼 클릭시 모달 토글
+      $('#floatingAiBtn').on('click', () => {
+        $('#aiAssistantModal').toggle();
+      });
+      
+      // 모달 닫기 버튼
+      $('#closeAiModal').on('click', () => {
+        $('#aiAssistantModal').hide();
+      });
+      
+      // 질문하기 버튼
       $('#askBtn').on('click', () => {
         this.askQuestion();
       });
-      // Enter 키로도 질문 가능
+      
+      // Enter 키로도 질문 가능 (Shift+Enter는 줄바꿈)
       $('#accountQuestion').on('keypress', (e) => {
         if (e.which === 13 && !e.shiftKey) {
           e.preventDefault();
           this.askQuestion();
+        }
+      });
+      
+      // 모달 외부 클릭시 닫기
+      $(document).on('click', (e) => {
+        const modal = $('#aiAssistantModal');
+        const floatingBtn = $('#floatingAiBtn');
+        if (modal.is(':visible') && 
+            !modal.is(e.target) && modal.has(e.target).length === 0 && 
+            !floatingBtn.is(e.target) && floatingBtn.has(e.target).length === 0) {
+          modal.hide();
         }
       });
     },
