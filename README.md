@@ -390,6 +390,25 @@ psql -U your_username -d aidb -f src/main/resources/sql/datatable.sql
 
 ---
 
+** 화면
+
+스마트홈 AI
+<img width="1919" height="899" alt="image" src="https://github.com/user-attachments/assets/7d28aa70-ad68-4977-8f53-edbf3aeae4e9" />
+
+가계부AI어시스턴트
+<img width="1911" height="884" alt="image" src="https://github.com/user-attachments/assets/f20d3db2-93af-4dd7-ac83-df1bfba26358" />
+
+실시간 쓰레기 분리수거 도우미
+<img width="1919" height="842" alt="image" src="https://github.com/user-attachments/assets/70aff86c-3c4f-4592-8046-fa2be92c31f5" />
+
+AI 주식 분석
+<img width="1919" height="896" alt="image" src="https://github.com/user-attachments/assets/609d293f-a480-40d3-b8ad-5a3fbf92908a" />
+
+<img width="1919" height="785" alt="image" src="https://github.com/user-attachments/assets/491fc954-cb86-456c-8141-a759fd6071a8" />
+
+
+
+
 ## 📊 주요 API 엔드포인트
 
 | 기능 | Method | Endpoint | 설명 |
