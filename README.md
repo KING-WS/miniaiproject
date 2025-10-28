@@ -150,21 +150,18 @@ c:\miniaiproject\ai\
 - AI 대화 히스토리 표시
 
 ### 💰 가계부 AI (영수증 스캐너)
-<img width="1900" height="895" alt="가계부 AI - 캘린더 뷰" src="https://github.com/user-attachments/assets/accountbook-calendar" />
 
 **캘린더 기능:**
 - 월별 지출 내역 시각화
 - 일자별 지출 금액 표시
 - 카테고리별 색상 구분
 
-<img width="1900" height="895" alt="가계부 AI - 영수증 스캔" src="https://github.com/user-attachments/assets/receipt-scanner" />
 
 **영수증 스캔 기능:**
 - 실시간 웹캠 미리보기
 - 영수증 캡쳐 및 OCR 분석
 - 자동 항목 추출 (날짜, 가게명, 상품, 금액, 카테고리)
 
-<img width="1900" height="895" alt="가계부 AI - AI 어시스턴트" src="https://github.com/user-attachments/assets/ai-assistant-floating" />
 
 **AI 어시스턴트 (플로팅 버튼):**
 - 우측 하단 플로팅 버튼으로 언제든 접근
@@ -172,22 +169,16 @@ c:\miniaiproject\ai\
 - 지출 추가/삭제 명령
 
 ### ♻️ 분리수거 맨
-<img width="1900" height="895" alt="분리수거 맨 화면" src="https://github.com/user-attachments/assets/recycling-helper" />
-
 **주요 기능:**
 - 웹캠으로 물품 촬영
 - AI 이미지 인식 및 분류
 - 상세한 분리수거 방법 안내
 
 ### 📈 주식 분석 AI
-<img width="1900" height="895" alt="주식 분석 AI - 차트 분석" src="https://github.com/user-attachments/assets/stock-chart-analysis" />
-
 **차트 패턴 분석:**
 - 기술적 분석 패턴 자동 인식
 - 지지/저항선 분석
 - 패턴 의미 해석 및 전망 제시
-
-<img width="1900" height="895" alt="주식 분석 AI - 뉴스 감성 분석" src="https://github.com/user-attachments/assets/stock-news-sentiment" />
 
 **뉴스 감성 분석:**
 - 이미지에서 텍스트 추출 (OCR)
