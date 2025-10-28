@@ -393,19 +393,17 @@ psql -U your_username -d aidb -f src/main/resources/sql/datatable.sql
 ** 화면
 
 스마트홈 AI
-<img width="1919" height="899" alt="image" src="https://github.com/user-attachments/assets/7d28aa70-ad68-4977-8f53-edbf3aeae4e9" />
-
+![Image](https://github.com/user-attachments/assets/3d25c717-5b6d-4481-b537-51fc049d7f1a)
 가계부AI어시스턴트
-<img width="1911" height="884" alt="image" src="https://github.com/user-attachments/assets/f20d3db2-93af-4dd7-ac83-df1bfba26358" />
+<img width="1919" height="907" alt="Image" src="https://github.com/user-attachments/assets/152a5986-5600-492a-aae9-2f25e41aed20" />
 
 실시간 쓰레기 분리수거 도우미
-<img width="1919" height="842" alt="image" src="https://github.com/user-attachments/assets/70aff86c-3c4f-4592-8046-fa2be92c31f5" />
+![Image](https://github.com/user-attachments/assets/d4fbe659-ecd9-455f-953c-c920428e1ffd)
 
 AI 주식 분석
-<img width="1919" height="896" alt="image" src="https://github.com/user-attachments/assets/609d293f-a480-40d3-b8ad-5a3fbf92908a" />
+![Image](https://github.com/user-attachments/assets/9078e1ff-78b1-4864-b63c-3322a5049fc3)
 
-<img width="1919" height="785" alt="image" src="https://github.com/user-attachments/assets/491fc954-cb86-456c-8141-a759fd6071a8" />
-
+![Image](https://github.com/user-attachments/assets/f7e0b372-b9eb-47fb-97ec-ed8690a91011)
 
 
 
